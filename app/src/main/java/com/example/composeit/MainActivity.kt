@@ -36,6 +36,16 @@ class MainActivity : AppCompatActivity() {
                         Text(text = "Activity2")
                     }
 
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Button(onClick = {
+                        val intent = Intent(this@MainActivity, Compose3Activity::class.java)
+                        startActivity(intent)
+
+                    }) {
+                        Text(text = "Activity3")
+                    }
+
 
                 }
             }
