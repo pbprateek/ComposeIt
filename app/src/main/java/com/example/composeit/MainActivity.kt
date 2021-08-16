@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
 
                     }) {
-                        Text(text = "Activity1")
+                        Text(text = "List with Expand")
                     }
 
                     Spacer(modifier = Modifier.height(8.dp))
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
 
                     }) {
-                        Text(text = "Activity2")
+                        Text(text = "Image Card")
                     }
 
                     Spacer(modifier = Modifier.height(8.dp))
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
 
                     }) {
-                        Text(text = "Activity3")
+                        Text(text = "Constraint and State")
                     }
 
 
