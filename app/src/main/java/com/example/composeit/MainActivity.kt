@@ -45,6 +45,24 @@ class MainActivity : AppCompatActivity() {
                     }) {
                         Text(text = "Constraint and State")
                     }
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Button(onClick = {
+                        val intent = Intent(this@MainActivity, AnimationActivity::class.java)
+                        startActivity(intent)
+
+                    }) {
+                        Text(text = "Animation")
+                    }
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Button(onClick = {
+                        val intent = Intent(this@MainActivity, Animation2Activity::class.java)
+                        startActivity(intent)
+
+                    }) {
+                        Text(text = "Animation-ProgressBar")
+                    }
 
 
                 }

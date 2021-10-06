@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeIt">
         <activity
+            android:name=".Animation2Activity"
+            android:exported="true"
+            android:label="@string/title_activity_animation2"
+            android:theme="@style/Theme.ComposeIt.NoActionBar" />
+        <activity
+            android:name=".AnimationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_animation"
+            android:theme="@style/Theme.ComposeIt.NoActionBar" />
+        <activity
             android:name=".Compose3Activity"
             android:exported="true" />
         <activity

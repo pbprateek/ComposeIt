@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">ComposeIt</string>
     <string name="title_activity_compose2">Compose2Activity</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="title_activity_animation2">Animation2Activity</string>
 </resources>
