@@ -64,6 +64,26 @@ class MainActivity : AppCompatActivity() {
                         Text(text = "Animation-ProgressBar")
                     }
 
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Button(onClick = {
+                        val intent = Intent(this@MainActivity, MusicKnobActivity::class.java)
+                        startActivity(intent)
+
+                    }) {
+                        Text(text = "Music Knob")
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Button(onClick = {
+                        val intent = Intent(this@MainActivity, MusicKnobCompleteActivity::class.java)
+                        startActivity(intent)
+
+                    }) {
+                        Text(text = "Music Knob Complete")
+                    }
+
 
                 }
             }

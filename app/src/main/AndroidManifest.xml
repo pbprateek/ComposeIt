@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeIt">
         <activity
+            android:name=".MusicKnobCompleteActivity"
+            android:exported="true"
+            android:label="@string/title_activity_music_knob_complete"
+            android:theme="@style/Theme.ComposeIt.NoActionBar" />
+        <activity
+            android:name=".MusicKnobActivity"
+            android:exported="true"
+            android:label="@string/title_activity_music_knob"
+            android:theme="@style/Theme.ComposeIt.NoActionBar" />
+        <activity
             android:name=".Animation2Activity"
             android:exported="true"
             android:label="@string/title_activity_animation2"
