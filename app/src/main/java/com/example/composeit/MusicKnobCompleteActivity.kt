@@ -46,7 +46,6 @@ class MusicKnobCompleteActivity : ComponentActivity() {
                         contentAlignment = Alignment.Center,
                         modifier = Modifier
                             .fillMaxSize()
-                            .background(Color(0xFF101010))
                     ) {
                         Row(
                             horizontalArrangement = Arrangement.Center,
@@ -69,6 +68,7 @@ class MusicKnobCompleteActivity : ComponentActivity() {
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .height(30.dp),
+                                //10*1 = 10, 10 *0.2 = 2
                                 activeBars = (barCount * volume).roundToInt(),
                                 barCount = barCount
                             )
@@ -170,8 +170,6 @@ fun MusicKnobFinal(
                 }
             }
             .rotate(rotation) //it handles -ve angle properly as it assumes that as counter clock wise so np
-
-
     )
 }
 
@@ -188,14 +186,20 @@ fun VolumeBar(
         modifier = modifier
     ) {
         val barWidth = remember {
+            //barCount *2 bcz if bar count is 30, we will have to fit 60 bars in the width to achieve the design(the remaining 30 are just for spaces and we are not gonna
+            // draw them but we will leave space)
             constraints.maxWidth / (2f * barCount)
         }
         Canvas(modifier = modifier) {
             for (i in 0 until barCount) {
                 drawRoundRect(
                     color = if (i in 0..activeBars) Color.Green else Color.DarkGray,
-                    topLeft = Offset(i * barWidth * 2f + barWidth / 2f, 0f),
-                    size = Size(barWidth, constraints.maxHeight.toFloat()),
+                    //topLeft = Offset((i * barWidth * 2f) , 0f),the prob with this is, if u follow, in the end there will be an space equal to one bar
+                    //So just to make it look centered we add half bar length in the start
+                    topLeft = Offset((i * barWidth * 2f) + barWidth / 2f, 0f),
+                    size = Size(
+                        barWidth, constraints.maxHeight.toFloat()
+                    ),
                     cornerRadius = CornerRadius(0f)
                 )
             }
