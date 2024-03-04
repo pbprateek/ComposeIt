@@ -2,15 +2,19 @@ package com.example.composeit
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.composeit.internal.InternalActivity
+import com.example.composeit.ui.activity.AnimProgressBarActivity
+import com.example.composeit.ui.activity.BlurAlphaImageActivity
+import com.example.composeit.ui.activity.MusicKnobActivity
+import com.example.composeit.ui.activity.MusicKnobCompleteActivity
 import com.example.composeit.ui.theme.ComposeItTheme
 
 class MainActivity : AppCompatActivity() {
@@ -19,46 +23,19 @@ class MainActivity : AppCompatActivity() {
         setContent {
             ComposeItTheme {
                 Column {
+
                     Button(onClick = {
-                        val intent = Intent(this@MainActivity, Compose1Activity::class.java)
+                        val intent = Intent(this@MainActivity, BlurAlphaImageActivity::class.java)
                         startActivity(intent)
 
                     }) {
-                        Text(text = "List with Expand")
+                        Text(text = "Blur Image")
                     }
 
                     Spacer(modifier = Modifier.height(8.dp))
 
                     Button(onClick = {
-                        val intent = Intent(this@MainActivity, Compose2Activity::class.java)
-                        startActivity(intent)
-
-                    }) {
-                        Text(text = "Image Card")
-                    }
-
-                    Spacer(modifier = Modifier.height(8.dp))
-
-                    Button(onClick = {
-                        val intent = Intent(this@MainActivity, Compose3Activity::class.java)
-                        startActivity(intent)
-
-                    }) {
-                        Text(text = "Constraint and State")
-                    }
-                    Spacer(modifier = Modifier.height(8.dp))
-
-                    Button(onClick = {
-                        val intent = Intent(this@MainActivity, AnimationActivity::class.java)
-                        startActivity(intent)
-
-                    }) {
-                        Text(text = "Animation")
-                    }
-                    Spacer(modifier = Modifier.height(8.dp))
-
-                    Button(onClick = {
-                        val intent = Intent(this@MainActivity, Animation2Activity::class.java)
+                        val intent = Intent(this@MainActivity, AnimProgressBarActivity::class.java)
                         startActivity(intent)
 
                     }) {
@@ -86,15 +63,6 @@ class MainActivity : AppCompatActivity() {
                         Text(text = "Music Knob Complete")
                     }
                     Spacer(modifier = Modifier.height(8.dp))
-
-                    Button(onClick = {
-                        val intent =
-                            Intent(this@MainActivity, InternalActivity::class.java)
-                        startActivity(intent)
-
-                    }) {
-                        Text(text = "Compose Internal")
-                    }
 
                 }
             }

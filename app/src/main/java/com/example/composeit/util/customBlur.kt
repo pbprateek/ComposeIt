@@ -1,4 +1,4 @@
-package com.marrow.composeit.util
+package com.example.composeit.util
 
 import android.graphics.RenderEffect
 import android.graphics.Shader

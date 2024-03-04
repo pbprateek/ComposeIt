@@ -1,4 +1,4 @@
-package com.example.composeit
+package com.example.composeit.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -17,16 +17,13 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInteropFilter
-import androidx.compose.ui.layout.boundsInParent
-import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.boundsInWindow
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
+import com.example.composeit.R
 import com.example.composeit.ui.theme.ComposeItTheme
 import kotlin.math.PI
-import kotlin.math.atan
 import kotlin.math.atan2
 
 

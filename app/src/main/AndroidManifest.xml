@@ -10,40 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeIt">
         <activity
-            android:name=".internal.InternalActivity"
-            android:exported="false"
-            android:label="@string/title_activity_internal"
-            android:theme="@style/Theme.ComposeIt" />
-        <activity
-            android:name=".MusicKnobCompleteActivity"
+            android:name=".ui.activity.MusicKnobCompleteActivity"
             android:exported="true"
             android:label="@string/title_activity_music_knob_complete"
             android:theme="@style/Theme.ComposeIt.NoActionBar" />
         <activity
-            android:name=".MusicKnobActivity"
+            android:name=".ui.activity.MusicKnobActivity"
             android:exported="true"
             android:label="@string/title_activity_music_knob"
             android:theme="@style/Theme.ComposeIt.NoActionBar" />
         <activity
-            android:name=".Animation2Activity"
+            android:name=".ui.activity.AnimProgressBarActivity"
             android:exported="true"
-            android:label="@string/title_activity_animation2"
             android:theme="@style/Theme.ComposeIt.NoActionBar" />
         <activity
-            android:name=".AnimationActivity"
-            android:exported="true"
-            android:label="@string/title_activity_animation"
-            android:theme="@style/Theme.ComposeIt.NoActionBar" />
-        <activity
-            android:name=".Compose3Activity"
-            android:exported="true" />
-        <activity
-            android:name=".Compose2Activity"
-            android:exported="true"
-            android:label="@string/title_activity_compose2"
-            android:theme="@style/Theme.ComposeIt.NoActionBar" />
-        <activity
-            android:name=".Compose1Activity"
+            android:name=".ui.activity.BlurAlphaImageActivity"
             android:exported="true"
             android:theme="@style/Theme.ComposeIt.NoActionBar" />
         <activity
