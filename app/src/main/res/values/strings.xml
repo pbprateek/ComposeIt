@@ -5,4 +5,5 @@
     <string name="title_activity_animation2">Animation2Activity</string>
     <string name="title_activity_music_knob">MusicKnobActivity</string>
     <string name="title_activity_music_knob_complete">MusicKnobCompleteActivity</string>
+    <string name="title_activity_internal">InternalActivity</string>
 </resources>

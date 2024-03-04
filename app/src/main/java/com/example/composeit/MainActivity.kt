@@ -10,6 +10,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.composeit.internal.InternalActivity
 import com.example.composeit.ui.theme.ComposeItTheme
 
 class MainActivity : AppCompatActivity() {
@@ -77,13 +78,23 @@ class MainActivity : AppCompatActivity() {
                     Spacer(modifier = Modifier.height(8.dp))
 
                     Button(onClick = {
-                        val intent = Intent(this@MainActivity, MusicKnobCompleteActivity::class.java)
+                        val intent =
+                            Intent(this@MainActivity, MusicKnobCompleteActivity::class.java)
                         startActivity(intent)
 
                     }) {
                         Text(text = "Music Knob Complete")
                     }
+                    Spacer(modifier = Modifier.height(8.dp))
 
+                    Button(onClick = {
+                        val intent =
+                            Intent(this@MainActivity, InternalActivity::class.java)
+                        startActivity(intent)
+
+                    }) {
+                        Text(text = "Compose Internal")
+                    }
 
                 }
             }

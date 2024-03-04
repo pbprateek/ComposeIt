@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeIt">
         <activity
+            android:name=".internal.InternalActivity"
+            android:exported="false"
+            android:label="@string/title_activity_internal"
+            android:theme="@style/Theme.ComposeIt" />
+        <activity
             android:name=".MusicKnobCompleteActivity"
             android:exported="true"
             android:label="@string/title_activity_music_knob_complete"

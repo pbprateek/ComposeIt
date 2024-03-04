@@ -35,7 +35,8 @@ import kotlin.math.atan2
 import kotlin.math.roundToInt
 
 class MusicKnobCompleteActivity : ComponentActivity() {
-    @ExperimentalComposeUiApi
+
+    @OptIn(ExperimentalComposeUiApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

@@ -31,7 +31,7 @@ import kotlin.math.atan2
 
 
 class MusicKnobActivity : ComponentActivity() {
-    @ExperimentalComposeUiApi
+    @OptIn(ExperimentalComposeUiApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
